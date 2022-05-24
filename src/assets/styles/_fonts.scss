@@ -1,0 +1,12 @@
+$font-list:(
+	400 : url('../fonts/UniversLTStd.woff'),
+	700 : url('../fonts/UniversLTStd-Bold.woff')
+);
+
+@each $weight, $values in $font-list{
+	@font-face {
+		font-family: "Univers";
+		font-weight: $weight;
+		src: $values;
+	}
+}

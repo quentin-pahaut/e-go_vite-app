@@ -1,0 +1,71 @@
+@keyframes whole-baseline-animation{
+	from{
+		transform: translateY(calc(100% + 4.5vh));
+	}
+	to { 
+		transform: translateY(0%); 
+	}	
+}
+
+@keyframes action-baseline-animation-show{
+	from{
+		transform: translateY(0%);
+	}
+	to{
+		transform:translateY(-100%);
+	}
+}
+@keyframes action-baseline-animation-hide{
+	from{
+		transform: translateY(-100%);
+	}
+	to{
+		transform:translateY(-200%);
+	}
+}
+
+
+@keyframes illu-vertical-slide{
+	from{
+		transform: translateY(-100%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+}
+
+@keyframes illu-horizontal-slide-1{
+	from{
+		transform: translateX(calc(100%/3));
+	}
+	to{
+		transform: translateX(calc(0% / 3));
+	}
+}
+
+@keyframes illu-horizontal-slide-2{
+	from{
+		transform: translateX(calc(0% / 3));
+	}
+	to{
+		transform: translateX(calc(-100% / 3));
+	}
+}
+@keyframes illu-horizontal-slide-3{
+	from{
+		transform: translateX(calc(-100% / 3));
+	}
+	to{
+		transform: translateX(calc(-200% / 3));
+	}
+}
+
+
+@keyframes journey-horizontal-slide{
+	from{
+		transform: translateX(100%);
+	}
+	to{
+		transform: translateX(0%);
+	}
+}
