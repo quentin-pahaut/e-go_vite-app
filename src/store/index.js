@@ -22,6 +22,14 @@ export default createStore({
 		}
 	},
 	mutations: {
+		introStep (state){
+			step = 0
+			state.appStep = appSteps[step]
+		},
+		firstStep (state){
+			step = 1
+			state.appStep = appSteps[step]
+		},
 		nextStep (state){
 			step += 1
 			state.appStep = appSteps[step]

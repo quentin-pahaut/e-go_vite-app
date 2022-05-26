@@ -29,9 +29,10 @@ export default {
 		return {}
 	},
 
-	computed: mapState({
-		currentPart: state => state.appStep
-	}),
+	computed: 
+		mapState({
+			currentPart: state => state.appStep
+		}),
 	
 	methods:{
 		

@@ -33,8 +33,8 @@ export default {
 	},
 
 	mounted(){
-		this.introAnimation()
-		// this.setCurrentPart()
+		this.introAnimation(),
+		this.$store.commit('introStep')
 	},
 
 	watch: {
