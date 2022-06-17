@@ -1,10 +1,9 @@
 <template>
-	<p class="caption" v-if="currentPart == 'get-on'">The bike !</p>
-	<p class="caption" v-if="currentPart == 'authorise'">use my Selfie to participate in this art work.</p>
-	<p class="caption" v-if="currentPart == 'take-1'">Selfie with my Reflection in the background.</p>
-	<p class="caption" v-if="currentPart == 'pedal-1'">Energy !</p>
-	<p class="caption" v-if="currentPart == 'end'">Thank you for participating in this collaborative artwork.</p>
-
+	<p class="caption" v-if="currentPart == 'get-on'"><span class="txt--large">The bike.</span></p>
+	<p class="caption" v-if="currentPart == 'authorise'"><span class="txt--large">use my Selfie</span> to participate in this art work.</p>
+	<p class="caption" v-if="currentPart == 'take-1'"><span class="txt--large">Selfie</span> with <span class="txt--large">my Reflection</span> in the background.</p>
+	<p class="caption" v-if="currentPart == 'pedal-1'"><span class="txt--large">Energy !</span></p>
+	<!-- <p class="caption" v-if="currentPart == 'end'"><span class="txt--large">Thank you for participating in this collaborative artwork.</p> -->
 </template>
 
 

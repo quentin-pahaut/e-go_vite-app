@@ -2,7 +2,7 @@ body{
 	color: $color-first;
 	font-family: "Univers";
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 4.2vw;
 	line-height: 1.6;
 
 	overflow: hidden;
@@ -145,13 +145,14 @@ p{
 
 
 
+
 .section{
 	width: 91vw;
 
 	&--illustration{
 		// width:100vw;
-		height:91vw;
-		overflow: hidden;
+		// height:91vw;
+		// overflow: hidden;
 		// margin : 4.5vw 4.5vw 0 4.5vw;
 	}
 
@@ -160,6 +161,15 @@ p{
 	}
 }
 
+.illustration-container{
+	height:91vw;
+	overflow: hidden;
+}
+
+.journey-illustration{
+	height:100%;
+	animation : illu-horizontal-slide-basic 4s 4s cubic-bezier(0.76, 0, 0.24, 1) forwards
+}
 
 ul{
 	list-style: none;

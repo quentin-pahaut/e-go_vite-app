@@ -35,7 +35,7 @@ export default {
 
 	data(){
 		return {
-			// currentPart : this.$store.state.appStep,
+
 		}
 	},
 	computed: 
@@ -43,6 +43,18 @@ export default {
 			currentPart: state => state.appStep
 		}),
 
+	// watch:{
+	// 	'currentPart': {
+	// 		handler: "activeEffect"
+	// 	}
+	// },
+	
+	methods:{
+		// activeEffect(){
+		// 	let activeElements = document.querySelectorAll('step-list__el--active')
+		// 	console.log(activeElements)
+		// }
+	}
 }
 </script>
 

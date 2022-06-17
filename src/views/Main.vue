@@ -1,13 +1,9 @@
 <template>
 	<sectionHeader />
 	<main class="container__main">
-		<illustrationCaption />
-		<!-- <p class="caption" v-if="currentPart == 'get-on'">The bike</p> -->
-		<div>
-			<sectionIllustration />
-			<sectionNav />
-		</div>
-
+		<!-- <illustrationCaption /> -->
+		<sectionIllustration />
+		<sectionNav />
 	</main>
 </template>
 
@@ -18,7 +14,7 @@ import SectionHeader from '@/components/sections/SectionHeader.vue'
 import SectionIllustration from '@/components/sections/SectionIllustration.vue'
 import SectionNav from '@/components/sections/SectionNav.vue'
 
-import illustrationCaption from '@/components/ui/UiIllustrationCaption.vue'
+// import illustrationCaption from '@/components/ui/UiIllustrationCaption.vue'
 
 
 export default {
@@ -28,7 +24,7 @@ export default {
 		SectionHeader,
 		SectionIllustration,
 		SectionNav,
-		illustrationCaption
+		// illustrationCaption
 	},
 
 	mounted(){
@@ -36,4 +32,22 @@ export default {
 	},
 }
 </script>
+
+<style lang="scss" scoped>
+.section{
+	&--header{
+		animation: main-header-show-animation 2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+	}
+	&--illustration {
+		animation: main-illustration-show-animation 2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+	}
+	&--nav{
+		animation: whole-baseline-animation 2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+	}	
+}
+
+
+
+
+</style>
  

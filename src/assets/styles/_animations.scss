@@ -34,6 +34,15 @@
 	}
 }
 
+@keyframes illu-horizontal-slide-basic{
+	from{
+		transform: translateX(0%);
+	}
+	to{
+		transform: translateX(calc(-200% / 3));
+	}
+}
+
 @keyframes illu-horizontal-slide-1{
 	from{
 		transform: translateX(calc(100%/3));
@@ -68,4 +77,22 @@
 	to{
 		transform: translateX(0%);
 	}
+}
+
+@keyframes main-illustration-show-animation{
+	from{
+		transform: translateY(150%);
+	}
+	to { 
+		transform: translateY(0%); 
+	}	
+}
+
+@keyframes main-header-show-animation{
+	from{
+		transform: translateY(-150%);
+	}
+	to { 
+		transform: translateY(0%); 
+	}	
 }
